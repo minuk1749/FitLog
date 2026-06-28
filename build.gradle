@@ -23,7 +23,8 @@ dependencies {
 	// 입력값 검증 (@Valid, @NotNull 등) — 팀원2 도메인(인바디/신체/운동) DTO 검증에 필요
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	// Swagger (API 문서 + 브라우저에서 바로 테스트): http://localhost:8080/swagger-ui.html
-	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0'
+	// Spring Boot 3.5.x 와 호환되는 2.8.x 사용 (2.6.0 은 3.3.x 용이라 /v3/api-docs 가 500 남)
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.9'
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.mysql:mysql-connector-j'
 	annotationProcessor 'org.projectlombok:lombok'
