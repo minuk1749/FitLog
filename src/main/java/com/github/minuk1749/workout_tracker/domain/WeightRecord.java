@@ -15,8 +15,18 @@ public class WeightRecord {
     private Long id;
 
     @Column(nullable = false)
-    private Double weight;
+    private Double weight; //체중
 
     @Column(nullable = false)
-    private LocalDate recordedAt;
+    private LocalDate recordedAt; // 기록한 일시
+
+    public void update(Double weight, LocalDate recordedAt) {
+        this.weight = weight;
+        this.recordedAt = recordedAt;
+    }
+
+    public WeightRecord(Double weight, LocalDate recordedAt) {
+        this.weight = weight;
+        this.recordedAt = recordedAt;
+    }
 }
