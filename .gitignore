@@ -39,3 +39,6 @@ out/
 ### PostMan ###
 .postman/
 postman/
+
+### 눈바디 업로드 사진 (서버 로컬 저장 - 깃에 올리지 않음) ###
+uploads/
